@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Laporan Toko</title>
+    
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <h1>Laporan Toko Kelontong</h1>
+    </header>
+    <main class="laporan-container">
+        <!-- Laporan Stok -->
+        <section class="laporan-box">
+            <h2>Laporan Stok Produk</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Produk</th>
+                        <th>Harga</th>
+                        <th>Stok Tersedia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <tr>
+                            <td>Beras 5kg</td>
+                            <td>Rp 65.000</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Minyak Goreng 2L</td>
+                            <td>Rp 35.000</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Gula Pasir 1kg</td>
+                            <td>Rp 15.000</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Garam 500g</td>
+                            <td>Rp 5.000</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Kopi Bubuk 200g</td>
+                            <td>Rp 25.000</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Teh Celup 25pcs</td>
+                            <td>Rp 12.000</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>Susu Kental Manis</td>
+                            <td>Rp 17.000</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Mie Instan (per bungkus)</td>
+                            <td>Rp 3.500</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Kecap Manis 600ml</td>
+                            <td>Rp 22.000</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Saus Sambal 500ml</td>
+                            <td>Rp 18.000</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>Tepung Terigu 1kg</td>
+                            <td>Rp 13.000</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>Mentega 200g</td>
+                            <td>Rp 20.000</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Telur Ayam (per lusin)</td>
+                            <td>Rp 32.000</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Sabun Mandi 100g</td>
+                            <td>Rp 7.000</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Detergen 1kg</td>
+                            <td>Rp 30.000</td>
+                            <td>40</td>
+                        </tr>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Laporan Pelanggan -->
+        <section class="laporan-box">
+            <h2>Laporan Data Pelanggan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Pelanggan</th>
+                        <th>Nama Pelanggan</th>
+                        <th>Total Transaksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PLG-001</td>
+                        <td>Budi Santoso</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-002</td>
+                        <td>Siti Rahayu</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-003</td>
+                        <td>Andi Wijaya</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-004</td>
+                        <td>Rina Kurnia</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-005</td>
+                        <td>Joko Prasetyo</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-006</td>
+                        <td>Desi Anggraini</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-007</td>
+                        <td>Ahmad Fauzi</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-008</td>
+                        <td>Lina Marlina</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-009</td>
+                        <td>Samsul Hadi</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>PLG-010</td>
+                        <td>Fitria Dewi</td>
+                        <td>7</td>
+                    </tr>
+                    
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Rekapitulasi Penjualan -->
+        <section class="laporan-box">
+            <h2>Rekapitulasi Penjualan</h2>
+            <div class="rekapitulasi">
+                <div class="periode">
+                    <h3>Harian</h3>
+                    <p>Total Penjualan: <b>Rp 12.250.000</b></p>
+                    <p>Tanggal: 12 Februari 2025</p>
+                    <p>Jumlah Transaksi: <b>102</b></p>
+                    <p>Rata-rata: <b>Rp 120.100 / transaksi</b></p>
+                </div>
+                <div class="periode">
+                    <h3>Bulanan</h3>
+                    <p>Total Penjualan: <b>Rp 57.000.000</b></p>
+                    <p>Bulan: Februari 2025</p>
+                    <p>Jumlah Transaksi: <b>340</b></p>
+                    <p>Rata-rata: <b>Rp 67.000 / transaksi</b></p>
+                </div>
+                <div class="periode">
+                    <h3>Tahunan</h3>
+                    <p>Total Penjualan: <b>Rp 120.000.000</b></p>
+                    <p>Tahun: 2024</p>
+                    <p>Jumlah Transaksi: <b>8.400</b></p>
+                    <p>Rata-rata: <b>Rp 89.500 / transaksi</b></p>
+                </div>
+            </div>
+            
+            <!-- Grafik Penjualan -->
+            <div class="statistik">
+                <h3>Grafik Penjualan</h3>
+                <div class="chart-container">
+                    <canvas id="chartPenjualan"></canvas>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            const ctx = document.getElementById('chartPenjualan').getContext('2d');
+            const chartPenjualan = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Harian', 'Bulanan', 'Tahunan'],
+                    datasets: [{
+                        label: 'Total Penjualan',
+                        data: [12250000, 50000000, 120000000],
+                        backgroundColor: ['red', 'blue', 'green'],
+                        borderColor: ['darkred', 'darkblue', 'darkgreen'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <!-- Faktur Jual -->
+        <section class="laporan-box">
+            <h2>Faktur Penjualan</h2>
+        
+            <div class="faktur">
+                <div class="faktur-header">
+                    <p>No. Faktur: INV-20250215-001</p>
+                    <p>Tanggal: 15 Februari 2025</p>
+                    <p>Pelanggan: Budi Santoso</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Beras 5kg</td>
+                            <td>2</td>
+                            <td>Rp 65.000</td>
+                            <td>Rp 130.000</td>
+                        </tr>
+                        <tr>
+                            <td>Minyak Goreng 2L</td>
+                            <td>3</td>
+                            <td>Rp 35.000</td>
+                            <td>Rp 105.000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td>Rp 235.000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        
+            <div class="faktur">
+                <div class="faktur-header">
+                    <p>No. Faktur: INV-20250213-002</p>
+                    <p>Tanggal: 13 Februari 2025</p>
+                    <p>Pelanggan: Siti Rahayu</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gula Pasir 1kg</td>
+                            <td>4</td>
+                            <td>Rp 15.000</td>
+                            <td>Rp 60.000</td>
+                        </tr>
+                        <tr>
+                            <td>Kopi Bubuk 200g</td>
+                            <td>2</td>
+                            <td>Rp 25.000</td>
+                            <td>Rp 50.000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td>Rp 110.000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        
+            <div class="faktur">
+                <div class="faktur-header">
+                    <p>No. Faktur: INV-20250201-003</p>
+                    <p>Tanggal: 1 Februari 2025</p>
+                    <p>Pelanggan: Andi Wijaya</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mie Instan (per bungkus)</td>
+                            <td>10</td>
+                            <td>Rp 3.500</td>
+                            <td>Rp 35.000</td>
+                        </tr>
+                        <tr>
+                            <td>Kecap Manis 600ml</td>
+                            <td>1</td>
+                            <td>Rp 22.000</td>
+                            <td>Rp 22.000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td>Rp 57.000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        
+            <div class="faktur">
+                <div class="faktur-header">
+                    <p>No. Faktur: INV-20250225-004</p>
+                    <p>Tanggal: 25 Februari 2025</p>
+                    <p>Pelanggan: Rina Kurnia</p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produk</th>
+                            <th>Jumlah</th>
+                            <th>Harga</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tepung Terigu 1kg</td>
+                            <td>2</td>
+                            <td>Rp 13.000</td>
+                            <td>Rp 26.000</td>
+                        </tr>
+                        <tr>
+                            <td>Telur Ayam (per lusin)</td>
+                            <td>1</td>
+                            <td>Rp 32.000</td>
+                            <td>Rp 32.000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td>Rp 58.000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        
+        </section>
+        
+
+
+        <a href="index.html" class="kembali">Kembali ke Beranda</a>
+    </main>
+</body>
+</html>
